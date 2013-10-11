@@ -1,17 +1,13 @@
 <snippet>
 	<content><![CDATA[
-/* iOS Retina ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
+/* -- HIGH-DENSITY DEVICES -- */
+@media screen and (-webkit-device-pixel-ratio: 2), (-webkit-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2) {
+    
+    .class-name {
+        background-image:url('../img/sprite@2x.png');
+        background-size: 249px 138px; // NOTE: Must be the same dimensions of original sprite background size.
+    }
 
-/* Android and iOS <5----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
